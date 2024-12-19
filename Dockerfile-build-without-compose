@@ -10,5 +10,6 @@ COPY ./data/music /var/www/html/music/
 COPY ./data/image /var/www/html/image/
 RUN mkdir -p /etc/letsencrypt/live/akdocker.ddnsfree.com/
 COPY ./data/key /etc/letsencrypt/live/akdocker.ddnsfree.com/
+COPY ./data/key /etc/letsencrypt/live/akdocker.ddnsfree.com/
 
 RUN chmod a+rx /var/www/html/image/chillers.jpg /var/www/html/music/good.mp3
