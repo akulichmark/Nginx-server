@@ -1,3 +1,4 @@
+#Script for obtain SSL sertificate at nginx server
 #!/bin/bash
 
 if ! [ -x "$(command -v docker compose)" ]; then
