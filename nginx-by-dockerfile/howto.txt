@@ -1,4 +1,0 @@
-docker build -t nginx .
-docker run -p 80:80 -d --name nginx nginx
-for sh 
-docker run -p 80:80 -it --name nginx nginx sh
