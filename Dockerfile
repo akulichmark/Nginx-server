@@ -9,4 +9,4 @@ COPY ./data/site/ /var/www/html/
 COPY ./data/music/ /var/www/html/music/
 COPY ./data/image/ /var/www/html/image/
 
-RUN chmod a+rx  /var/www/html/music/good.mp3 /var/www/html/image/cow.webm
+RUN chmod -R a+rx  /var/www/html/music/ /var/www/html/image/
