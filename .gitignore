@@ -3,3 +3,4 @@ Dockerfile-build-without-compose
 init-letsencrypt.sh
 docker-compose
 nginx-by-dockerfile
+buildspec_old.yml
