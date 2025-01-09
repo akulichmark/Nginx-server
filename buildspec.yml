@@ -22,6 +22,6 @@ phases:
       - echo Pushing the Docker image...
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$COMMIT_ID
-      - printf '[{"name":"nginx-server-ecs","imageUri":"%s"}]' $IMAGE_REPO_NAME:$COMMIT_ID > imagedefinitions.json
+      - printf '[{"name":"nginx-web-server","imageUri":"%s"}]' $IMAGE_REPO_NAME:$COMMIT_ID > imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
