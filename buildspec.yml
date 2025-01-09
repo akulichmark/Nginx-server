@@ -1,5 +1,8 @@
 version: 0.2
 
+artifacts:
+  files:
+    - '**/*'
 phases:
   pre_build:
     commands:
